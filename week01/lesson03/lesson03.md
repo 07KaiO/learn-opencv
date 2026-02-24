@@ -59,3 +59,8 @@ cv2.imshow("Flipped", img_flip)
 
 cv2.waitKey(0)
 ```
+
+---
+
+1. Giả sử bạn có một tấm ảnh kích thước 600 x 800 (Cao 600, Rộng 800).Bạn muốn Cắt (Crop) lấy một hình vuông ở chính giữa ảnh, có kích thước 200 x 200. Bạn sẽ viết dòng lệnh img[y1:y2, x1:x2] như thế nào?
+2. Câu hỏi tư duy: Nếu bạn Resize một tấm ảnh nhỏ xíu lên một kích thước cực lớn, tấm ảnh sẽ bị hiện tượng gì?
