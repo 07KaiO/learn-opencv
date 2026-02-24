@@ -64,3 +64,10 @@ cv2.waitKey(0)
 
 1. Giả sử bạn có một tấm ảnh kích thước 600 x 800 (Cao 600, Rộng 800).Bạn muốn Cắt (Crop) lấy một hình vuông ở chính giữa ảnh, có kích thước 200 x 200. Bạn sẽ viết dòng lệnh img[y1:y2, x1:x2] như thế nào?
 2. Câu hỏi tư duy: Nếu bạn Resize một tấm ảnh nhỏ xíu lên một kích thước cực lớn, tấm ảnh sẽ bị hiện tượng gì?
+
+Hiện tượng đó trong chuyên môn gọi là nhiễu pixel (pixelation) hoặc mất chi tiết (blurring).
+
+🔍 Tại sao lại bị như vậy?
+Hãy tưởng tượng tấm ảnh nhỏ của bạn là một bức tranh ghép hình (puzzle) có 100 mảnh. Khi bạn phóng nó lớn lên gấp 10 lần, máy tính buộc phải tạo ra 10.000 mảnh từ 100 mảnh ban đầu.
+
+Vì máy tính không biết những chi tiết "mới" ở giữa các pixel cũ trông như thế nào, nó phải thực hiện một thuật toán gọi là Nội suy (Interpolation) - hiểu nôm na là "đoán" màu sắc cho các pixel mới dựa trên các pixel xung quanh.
